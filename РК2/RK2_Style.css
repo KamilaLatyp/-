@@ -1,0 +1,38 @@
+body {
+		background: #FFFFFF;                        /*цвет фона БЕЛЫЙ*/
+		color: #00000F;                             /*цвет текста ЧЕРНЫЙ*/
+    font-weight: bold;                          /*стиль шрифта*/
+    font-size: 30px;                            /*размер шрифта*/
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-position: left top;
+}
+
+ .lux { 
+    width: 100px;                               /*размер таблицы*/
+    border: 1px solid #4B0082;                   /*внутр линии*/
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 6px solid #FFFFFF;                   /*цвет внешних линий(должно совпадать с фоном по заданию)*/
+ }
+    .lux th {
+        background: #A52A2A; /*цвет фона первой строчки в таблице*/
+        color: #FFD700; /*цвет текста в первой строчки в таблице*/
+    }
+    .lux td, .lux th {
+        border-bottom: 1px solid #8B0000; /*цвет всех линий в таблице*/
+        border: 5px solid #8B0000; /*цвет всех линий в таблице*/
+        text-align: center;
+    }
+   .lux td, .lux th {
+    padding: 4px;
+   }
+
+.lux tr:nth-child(odd){
+  background: #D2691E;                           /*цвет строк четный для задания зебра*/
+}
+
+    .lux tr:nth-child(even) {
+        background: #F4A460; /*цвет строк нечетный для задания зебра*/
+    }
