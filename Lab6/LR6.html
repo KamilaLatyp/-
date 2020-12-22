@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <title>Регистрация</title>
+ </head>
+<body background="1.jpg">
+    <form action="http://somesite.com/script.asp" method="GET" oninput="range1value.value = range1.valueAsNumber">
+
+        <fieldset>
+            <legend align=center>Пользователь</legend>
+
+            <!-- Явное связывание метки через атрибут for -->
+            <label for="login">Имя пользователя: </label>
+            <input type="text" name="login" value=user size=20 maxlength=15/>
+
+            <hr />
+			
+            <!-- Неявное связывание метки -->
+            <label for="pass">
+                Пароль:
+                <input type="password" name="pass" size=15 maxlength=10/>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend align=center>Другие элементы</legend>
+
+            <label for="chb">Регистрация: </label>
+            <input type="checkbox" name="chb" checked>
+
+            <hr />
+
+            <!-- группа радиокнопок -->
+            <label for="comp">Пол: </label>
+            <input type="radio" name="comp" value="P3" checked>Женский</input>
+            <input type="radio" name="comp" value="P4">Мужской</input>
+
+            <hr />
+
+            <label>Электронная почта:</label>
+            <input type="email" name="email1" />
+
+            <hr />
+
+            <label>Телефон:</label>
+            <input type="tel" name="tel1" />
+
+            <hr />
+
+            <label>
+                Ввод дополнительной информации:<br>
+                <textarea name="text1" rows="7" cols="50">*ввод многострочного текста
+                </textarea>
+            </label>
+
+            <hr />
+
+            <!-- Список -->
+            <label>
+                Любимая книга:
+                <select size="1" multiple name="comp_select">
+                    <option selected value="P1">The Raven Boys</option>
+                    <option value="P2">The Foxhole Court</option>
+                    <option value="P3">King Of Scars</option>
+                    <option value="P4">Call Down the Hawk</option>
+					<option value="P5">Six of Crows</option>
+                </select>
+            </label>
+
+            <hr />
+
+            <!-- Выпадающий список -->
+            <label>
+                Любимое животное:
+                <select size="1" name="comp_combobox">
+                    <option selected value="P1">Лама</option>
+                    <option value="P2">Альпака</option>
+                    <option value="P3">Викунья</option>
+                    <option value="P4">Гуанако</option>
+                </select>
+            </label>
+
+            <hr />
+
+            <!-- Список на основе текстового поля -->
+            <label>
+                Любимое занятие:
+                <input type="text" name="datalist1" list="comp_combobox_datalist" size=40 maxlength=40 />
+                <datalist id="comp_combobox_datalist">
+                    <option selected value="1">Программирование</option>
+                    <option value="2">Рисование</option>
+                    <option value="3">Волейбол</option>
+                    <option value="4">Сон</option>
+					<option value="5">Еда</option>
+                </datalist>
+            </label>
+
+            <hr />
+
+            <!-- кнопка с изображением -->
+            <input type="image" name="imgsubmit" src="2.png" width="60" height="40"
+                   alt="Графическая кнопка отправки" ismap>
+
+            <hr />
+			
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+
+        </fieldset>
+    </form>
+</body>
+</html>
