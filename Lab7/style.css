@@ -1,0 +1,29 @@
+section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.carousel-control-prev-icon{
+	background-image: url(2.svg);
+}
+
+.carousel-control-next-icon{
+	background-image: url(1.svg);
+}
+
+.bib{
+	font-size:13pt;
+ font-family:Courier New, monospace;
+}
+
+.col-6{
+	font-size:13pt;
+ font-family:Courier New, monospace;
+}
+
+.con{
+	
+	font-size:13pt;
+ font-family:Courier New, monospace;
+}
+
+
